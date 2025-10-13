@@ -1,0 +1,17 @@
+@media only screen and (max-width: 992px) {
+    .d-flex nav {
+        display: none;
+    }
+    .burger-menu {
+        display: block !important;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .d-flex nav {
+        display: none;
+    }
+    .burger-menu {
+        display: block !important;
+    }
+}

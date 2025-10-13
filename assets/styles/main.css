@@ -15,6 +15,22 @@ ol {
   list-style: none;
 }
 
+@media only screen and (max-width: 992px) {
+  .d-flex nav {
+    display: none;
+  }
+  .burger-menu {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .d-flex nav {
+    display: none;
+  }
+  .burger-menu {
+    display: block !important;
+  }
+}
 .container {
   width: min(100%, 1140px);
   margin: 0 auto;
@@ -42,6 +58,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding-block: 10px;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 1.75rem;
 }
 
 .parent-list {
@@ -109,4 +130,64 @@ header {
   transform: translateY(0);
   visibility: visible;
   display: block;
+}
+
+#features {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#features .imagine-header {
+  text-align: center;
+  width: 600px;
+}
+#features .imagine-header h2 {
+  font-size: 40px;
+}
+#features .imagine-header p {
+  font-size: 1.25rem;
+  color: gray;
+}
+
+.imagine-cards {
+  margin-block: 36px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.imagine-cards .card {
+  position: relative;
+  width: 350px;
+  padding: 50px 30px 30px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  margin-block: 32px;
+}
+.imagine-cards .card .card-logo {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 24px;
+  background-color: #4285f4;
+  border-radius: 50%;
+}
+.imagine-cards .card .card-logo i {
+  color: #fff;
+}
+.imagine-cards .card .card-info {
+  text-align: center;
+}
+.imagine-cards .card .card-info h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
+.imagine-cards .card .card-info p {
+  color: gray;
+  line-height: 1.7;
+  margin-block: 8px;
+}
+.imagine-cards .card .card-info a {
+  color: #007bff;
 }/*# sourceMappingURL=main.css.map */
