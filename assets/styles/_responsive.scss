@@ -2,7 +2,7 @@
     .container {
         max-width: 720px;
     }
-    .d-flex nav {
+    .desktop-menu {
         display: none;
     }
     .burger-menu {
@@ -95,6 +95,12 @@
             width: 48% !important;
         }
     }
+
+    #contact {
+        h2 {
+            font-size: 30px !important;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -105,7 +111,9 @@
     .imagine-cards {
         grid-template-columns: 1fr !important;
     }
-
+    .burger-menu {
+        font-size: 1.5rem !important;
+    }
     .communicate {
         gap: 0 !important;
     }
@@ -135,6 +143,17 @@
     .blog-cards {
         gap: 40px 20px !important;
         .card {
+            width: 100% !important;
+        }
+    }
+
+    #contact {
+        padding-block: 2.5rem !important;
+    }
+
+    .names {
+        display: block !important;
+        .name {
             width: 100% !important;
         }
     }

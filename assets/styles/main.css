@@ -19,7 +19,7 @@ ol {
   .container {
     max-width: 720px;
   }
-  .d-flex nav {
+  .desktop-menu {
     display: none;
   }
   .burger-menu {
@@ -97,6 +97,9 @@ ol {
   .blog-cards .card {
     width: 48% !important;
   }
+  #contact h2 {
+    font-size: 30px !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   .container {
@@ -104,6 +107,9 @@ ol {
   }
   .imagine-cards {
     grid-template-columns: 1fr !important;
+  }
+  .burger-menu {
+    font-size: 1.5rem !important;
   }
   .communicate {
     gap: 0 !important;
@@ -129,6 +135,15 @@ ol {
     gap: 40px 20px !important;
   }
   .blog-cards .card {
+    width: 100% !important;
+  }
+  #contact {
+    padding-block: 2.5rem !important;
+  }
+  .names {
+    display: block !important;
+  }
+  .names .name {
     width: 100% !important;
   }
 }
@@ -158,7 +173,7 @@ header {
   color: #007bff;
 }
 
-.d-flex {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -166,6 +181,7 @@ header {
 }
 
 .burger-menu {
+  cursor: pointer;
   display: none;
   font-size: 1.75rem;
 }
@@ -636,8 +652,7 @@ header {
 #contact {
   position: relative;
   background: url(../images/contact/contact-bg.webp);
-  background-position: center;
-  background-size: 100% 100%;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   padding-block: 5rem;
@@ -650,12 +665,12 @@ header {
   right: 0;
   left: 0;
   opacity: 0.5;
-  background-color: #4285f4;
+  background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
 }
 #contact h2 {
   font-size: 40px;
   color: #fff;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .contact-info {
@@ -680,12 +695,18 @@ form .names {
   justify-content: space-between;
   gap: 30px;
 }
+form .names .name {
+  width: 50%;
+}
 form label {
   display: block;
   margin-bottom: 8px;
 }
 form textarea {
   resize: vertical;
+}
+form input {
+  height: 43px;
 }
 form input,
 form textarea {
@@ -706,4 +727,52 @@ form .btn-success {
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
+}
+
+.mobile-menu {
+  transform: translateX(110%);
+  width: 300px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 2001;
+  height: 100vh;
+  background-color: #fff;
+  padding: 36px 20px 0 20px;
+  transition: all 0.5s;
+}
+.mobile-menu .parent-list {
+  display: block;
+}
+.mobile-menu .exit {
+  display: flex;
+  justify-content: flex-end;
+}
+.mobile-menu .exit i {
+  cursor: pointer;
+  font-size: 20px;
+  color: gray;
+  transition: all 0.5s;
+}
+.mobile-menu .exit i:hover {
+  color: #000;
+}
+.mobile-menu a {
+  width: 100%;
+  padding: 10px 0 !important;
+  font-size: 20px;
+}
+
+.overlay {
+  position: fixed;
+  transition: all 0.5s;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  visibility: hidden;
+  opacity: 0;
 }/*# sourceMappingURL=main.css.map */
