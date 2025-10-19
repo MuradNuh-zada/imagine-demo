@@ -28,10 +28,42 @@
     <title>imagine</title>
   </head>
   <body>
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+      <div class="exit">
+        <i class="fa-solid fa-x"></i>
+      </div>
+      <nav>
+        <ul class="parent-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li class="about-list">
+            <a href="#">About Us <i class="fa-solid fa-angle-down"></i></a>
+            <ul class="about-child-list">
+              <li><a href="#">More Free Templates</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li class="links-list">
+                <a href="#"
+                  >More Links <i class="fa-solid fa-angle-right"></i
+                ></a>
+                <ul class="links-child-list">
+                  <li><a href="#">Menu One</a></li>
+                  <li><a href="#">Menu Two</a></li>
+                  <li><a href="#">Menu Three</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
     <header>
-      <div class="container d-flex">
+      <div class="container navbar">
         <a href="#" class="logo">imagine<span>.</span> </a>
-        <nav>
+        <nav class="desktop-menu">
           <ul class="parent-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">Features</a></li>
@@ -57,6 +89,7 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
+
         <i class="fa-solid burger-menu fa-bars"></i>
       </div>
     </header>
@@ -668,7 +701,7 @@
         </div>
       </section>
       <section id="contact">
-        <div class="contact-info">
+        <div class="contact-info container">
           <h2>Contact Us</h2>
           <form action="">
             <span>Contact Form</span>
@@ -722,5 +755,7 @@
         },
       });
     </script>
+
+    <script src="./assets/main.js"></script>
   </body>
 </html>

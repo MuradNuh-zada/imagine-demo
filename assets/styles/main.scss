@@ -38,7 +38,7 @@ header {
     }
 }
 
-.d-flex {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +46,7 @@ header {
 }
 
 .burger-menu {
+    cursor: pointer;
     display: none;
     font-size: 1.75rem;
 }
@@ -518,8 +519,7 @@ header {
 #contact {
     position: relative;
     background: url(../images/contact/contact-bg.webp);
-    background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     padding-block: 5rem;
@@ -531,12 +531,12 @@ header {
         right: 0;
         left: 0;
         opacity: 0.5;
-        background-color: #4285f4;
+        background: linear-gradient(to right, #4286f4 0%, #42e2f4 100%);
     }
     h2 {
         font-size: 40px;
         color: #fff;
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
     }
 }
 
@@ -560,6 +560,9 @@ form {
         display: flex;
         justify-content: space-between;
         gap: 30px;
+        .name {
+            width: 50%;
+        }
     }
     label {
         display: block;
@@ -567,6 +570,9 @@ form {
     }
     textarea {
         resize: vertical;
+    }
+    input {
+        height: 43px;
     }
     input,
     textarea {
@@ -587,4 +593,52 @@ form {
         width: fit-content;
         cursor: pointer;
     }
+}
+
+.mobile-menu {
+    transform: translateX(110%);
+    width: 300px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    z-index: 2001;
+    height: 100vh;
+    background-color: #fff;
+    padding: 36px 20px 0 20px;
+    transition: all 0.5s;
+    .parent-list {
+        display: block;
+    }
+    .exit {
+        display: flex;
+        justify-content: flex-end;
+        i {
+            cursor: pointer;
+            font-size: 20px;
+            color: gray;
+            transition: all 0.5s;
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+    a {
+        width: 100%;
+        padding: 10px 0 !important;
+        font-size: 20px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    transition: all 0.5s;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
 }
