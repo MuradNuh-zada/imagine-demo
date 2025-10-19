@@ -32,6 +32,69 @@
             font-size: 30px !important;
         }
     }
+
+    .communicate {
+        flex-direction: column;
+        padding-block: 6rem !important;
+        & > img {
+            width: 100% !important;
+        }
+        .communite-text {
+            order: 1;
+            width: 100% !important;
+        }
+    }
+
+    #about-us {
+        padding-block: 5rem !important;
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+    .about-info {
+        flex-direction: column;
+        gap: 0 !important;
+
+        img {
+            width: 100% !important;
+        }
+        .about-text {
+            width: 100% !important;
+        }
+    }
+
+    #team {
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+
+    .team-members {
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: auto auto !important;
+        gap: 40px 30px !important;
+    }
+
+    #testimonial {
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+
+    #blog {
+        h2 {
+            font-size: 30px !important;
+        }
+    }
+
+    .blog-cards {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px 20px !important;
+        .card {
+            width: 48% !important;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -41,5 +104,38 @@
 
     .imagine-cards {
         grid-template-columns: 1fr !important;
+    }
+
+    .communicate {
+        gap: 0 !important;
+    }
+
+    #about-us {
+        padding-block: 2.5rem 5.5rem !important;
+    }
+
+    #team {
+        padding-block: 2.5rem !important;
+    }
+
+    .team-members {
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto !important;
+        gap: 50px !important;
+    }
+
+    #testimonial {
+        padding-block: 2.5rem !important;
+    }
+
+    #blog {
+        padding-block: 2.5rem 4rem !important;
+    }
+
+    .blog-cards {
+        gap: 40px 20px !important;
+        .card {
+            width: 100% !important;
+        }
     }
 }
