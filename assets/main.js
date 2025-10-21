@@ -11,7 +11,7 @@ burgerMenu.addEventListener("click", function () {
 
 function animationMenu(element) {
   element.addEventListener("click", function () {
-    mobileMenu.style.transform = "translateX(100%)";
+    mobileMenu.style.transform = "translateX(110%)";
     overlay.style.visibility = "hidden";
     overlay.style.opacity = "0";
   });
